@@ -2,7 +2,7 @@
 ### License
 
 ## MNIST dataset
-Use 'main.py' to train semi-supervised learning with MCMC for MNIST dataset. Run `python main.py` to start training MNIST dataset with default 100 labeled samples, 59900 unlabeled samples and 10000 testing data. *Please download [MNIST dataset](https://www.kaggle.com/oddrationale/mnist-in-csv) with csv file, put training data and testing data in the same path.* Change parameters yourself for your own personal needs. Example usage : 
+Use 'main.py' to train semi-supervised learning with MCMC for MNIST dataset. Run `python main.py` to start training MNIST dataset with default 100 labeled samples, 59900 unlabeled samples and 10000 testing data. **Please download [MNIST dataset](https://www.kaggle.com/oddrationale/mnist-in-csv) with csv file, put training data and testing data in the same path.** Change parameters yourself for your own personal needs. Example usage : 
 ```
 python main.py --path mnist-in-csv \
   --experiment 10 \
