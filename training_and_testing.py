@@ -16,7 +16,7 @@ from torch.autograd import Variable
 
 from preprocessing import MNIST_preprocessing, random_split_label_data
 
-training_data, training_true_label, testing_data, testing_true_label = MNIST_preprocessing()
+
 
 from network import Net
 from loss_functions import DBI, margin
@@ -26,7 +26,9 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
-def train_and_test(k_val, total_label_num, cluster_dim, k, batch, label_batch_size, test_batch, epoch, lr):
+def train_and_test(k_val, total_label_num, cluster_dim, k, batch, label_batch_size, test_batch, epoch, lr, path):
+    
+    training_data, training_true_label, testing_data, testing_true_label = MNIST_preprocessing(path)
       
     k_final_testing_acc = []
     k_final_unlabel_acc = []
