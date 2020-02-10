@@ -16,3 +16,9 @@ python main.py --path mnist-in-csv \
   --epoch 30 \
 ```
 
+## Requirements
+
+These are our enviorments to run the above:
+* torch==1.0.1.post2
+* torchvision==0.2.2.post3
+* tqdm==4.40.0
