@@ -22,6 +22,7 @@ def process_command():
     parser.add_argument("--label_batchsize",'-lb', type=int, default=50, help="batch size for labeled data")
     parser.add_argument("--learning_rate",'-lr', type=int, default=0.001, help="learning rate")
     parser.add_argument("--epoch",'-e', type=int, default=30, help="epoch num for every experiment")
+    parser.add_argument("--path",'-p', type=int, default='mnist-in-csv', help="path for MNIST data (csv file)")
     
     return parser.parse_args()
 
@@ -30,7 +31,7 @@ if __name__ == '__main__':
     args = process_command()
     
     k_final_testing_acc, k_final_unlabel_acc = train_and_test(args.experiment, args.labelnum, args.cluster, args.kmargin, 
-                                                              args.batch, args.test_batch, args.label_batchsize, args.epoch, args.learning_rate)
+                                                              args.batch, args.test_batch, args.label_batchsize, args.epoch, args.learning_rate, args.path)
     test_final_acc = [k_final_testing_acc[k][-1] for k in range(len(k_final_testing_acc))]
     print('testing acc results : ', test_final_acc)
     print('mean : ',np.mean(test_final_acc), ' / var : ',np.var(test_final_acc)**0.5)
