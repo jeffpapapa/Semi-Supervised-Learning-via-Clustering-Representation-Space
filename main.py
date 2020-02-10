@@ -15,7 +15,7 @@ def process_command():
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiment",'-ex', type=int, default=10, help="number of experiments")
     parser.add_argument("--labelnum",'-ln', type=int, default=100, help="number of labeled samples")
-    parser.add_argument("--cluster",'-clus', type=int, default=300, help="dimension of cluster embedding latent space")
+    parser.add_argument("--clusterdim",'-clus', type=int, default=300, help="dimension of cluster embedding latent space")
     parser.add_argument("--kmargin",'-km', type=int, default=10, help="number of k for margin loss")
     parser.add_argument("--batch",'-b', type=int, default=200, help="batch number for training data")
     parser.add_argument("--test_batch",'-tb', type=int, default=100, help="batch number for testing data")
@@ -30,7 +30,7 @@ def process_command():
 if __name__ == '__main__':
     args = process_command()
     
-    k_final_testing_acc, k_final_unlabel_acc = train_and_test(args.experiment, args.labelnum, args.cluster, args.kmargin, 
+    k_final_testing_acc, k_final_unlabel_acc = train_and_test(args.experiment, args.labelnum, args.clusterdim, args.kmargin, 
                                                               args.batch, args.test_batch, args.label_batchsize, args.epoch, args.learning_rate, args.path)
     test_final_acc = [k_final_testing_acc[k][-1] for k in range(len(k_final_testing_acc))]
     print('testing acc results : ', test_final_acc)
