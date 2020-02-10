@@ -10,14 +10,14 @@ Preprocessing for MNIST data
 import pandas as pd
 import random
 
-def MNIST_preprocessing():
+def MNIST_preprocessing(path):
     ### read MNIST training data
-    train_df = pd.read_csv('mnist-in-csv/mnist_train.csv')
+    train_df = pd.read_csv(path + '/mnist_train.csv')
     training_data = train_df.drop(['label'],1).values
     training_true_label = train_df['label'].values
     
     ### read testing data
-    test_df = pd.read_csv('mnist-in-csv/mnist_test.csv')
+    test_df = pd.read_csv(path+'/mnist_test.csv')
     testing_data = test_df.drop(['label'],1).values
     testing_true_label = test_df['label'].values
     
