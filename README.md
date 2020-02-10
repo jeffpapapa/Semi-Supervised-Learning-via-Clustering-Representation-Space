@@ -1,5 +1,4 @@
-# Clustering Structure Embedding Space for Semi Supervised Learning
-## MCMC (Maximum Cluster Margin Classifier) in pytorch
+# Clustering Structure Embedding Space for Semi Supervised Learning --- MCMC (Maximum Cluster Margin Classifier) in [pytorch](https://pytorch.org/)
 ### License
 
 ## MNIST dataset
