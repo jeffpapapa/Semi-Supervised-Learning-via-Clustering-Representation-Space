@@ -1,6 +1,7 @@
 # Clustering Structure Embedding Space for Semi Supervised Learning --- MCMC (Maximum Cluster Margin Classifier) in [pytorch](https://pytorch.org/)
 ### License
-
+author : Yen-Chieh, Huang
+Please cite `my paper(working now)` if you use this code or method.
 ## MNIST dataset
 ### Training MCMC for semi-supervised learning
 Use `main.py` to train semi-supervised learning with MCMC for MNIST dataset. Run `python main.py` to start training MNIST dataset with default 100 labeled samples, 59900 unlabeled samples and 10000 testing data. **Please download [MNIST dataset](https://www.kaggle.com/oddrationale/mnist-in-csv) with csv file first, then put training data and testing data in the same path.** Change parameters yourself for your own personal needs. Example usage : 
