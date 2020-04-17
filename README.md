@@ -17,6 +17,7 @@ python main.py --path mnist-in-csv \
   --learning_rate 0.001 \
   --epoch 30 \
 ```
+Note: you may also apply my loss function to your personal semi-supervised learning task.
 
 ### Requirements
 These are our main enviorments to run the above:
