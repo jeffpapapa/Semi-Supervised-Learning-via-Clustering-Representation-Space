@@ -2,7 +2,19 @@
 ### License
 author : Yen-Chieh, Huang
 Please cite `my paper(working now)` if you use this code or method.
+
+## toy problems
+### two-half moon
+Four green points are the labeled points, and the rest of points are unlabeled points.
+The figure shows the learning process by MCMC model.
+![](https://i.imgur.com/eyDyYKP.gif)
+
+
 ## MNIST dataset
+### Our result
+![](https://i.imgur.com/b3JdWuJ.png)
+
+
 ### Training MCMC for semi-supervised learning
 Use `main.py` to train semi-supervised learning with MCMC for MNIST dataset. Run `python main.py` to start training MNIST dataset with default 100 labeled samples, 59900 unlabeled samples and 10000 testing data. **Please download [MNIST dataset](https://www.kaggle.com/oddrationale/mnist-in-csv) with csv file first, then put training data and testing data in the same path.** Change parameters yourself for your own personal needs. Example usage : 
 ```
@@ -27,4 +39,3 @@ These are our main enviorments to run the above:
 
 
 ## Citation
-
