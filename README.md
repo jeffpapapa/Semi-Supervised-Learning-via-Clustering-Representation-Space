@@ -7,6 +7,7 @@ Please cite `my paper(working now)` if you use this code or method.
 ### two-half moon
 Four green points are the labeled points, and the rest of points are unlabeled points.
 The figure shows the learning process by MCMC model.
+
 ![](https://i.imgur.com/eyDyYKP.gif)
 
 
