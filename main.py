@@ -78,7 +78,7 @@ def train_mcmc(model, x, y, ul_x, optimizer):
 
         
     loss_DB = DBI(output_dim, cluster_dim, cuda_gpu)
-    loss_ML = margin(output_dim,5, cuda_gpu)
+    loss_ML = margin(output_dim,10, cuda_gpu)
 
 
     label_DB_loss = loss_DB(z_l, y).cuda()
