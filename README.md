@@ -17,9 +17,9 @@ The figure shows the learning process by MCMC model.
 
 
 ### Training MCMC for semi-supervised learning
-Use `main.py` to train semi-supervised learning with MCMC for MNIST dataset. Run `python main.py` to start training MNIST dataset with default 100 labeled samples, 59900 unlabeled samples and 10000 testing data. **Please download [MNIST dataset](https://www.kaggle.com/oddrationale/mnist-in-csv) with csv file first, then put training data and testing data in the same path.** Change parameters yourself for your own personal needs. Example usage : 
+Use `main.py` to train semi-supervised learning with MCMC for MNIST dataset. Run `python main.py --dataroot=mnist_data --dataset=mnist --method=mcmc` to start training MNIST dataset with default 100 labeled samples, 59900 unlabeled samples and 10000 testing data. **Please download [MNIST dataset](https://www.kaggle.com/oddrationale/mnist-in-csv) with csv file first, then put training data and testing data in the same path.** Change parameters yourself for your own personal needs. Example usage : 
 ```
-python main.py --dataroot mnist_data --dataset=mnist --method=mcmc\
+python main.py --dataroot=mnist_data --dataset=mnist --method=mcmc \
   --num_per_class=10 \
   --num_epochs=10 \
   --epoch_decay_start=3 \
