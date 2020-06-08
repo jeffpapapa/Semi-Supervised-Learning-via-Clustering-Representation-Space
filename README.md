@@ -39,5 +39,7 @@ If you want to apply MCMC for your own data set, you need the following process:
 3. check our code in `main.py`, find function `train_mcmc`, compute our loss followed by our example code
 4. train your model!
 
+### Notification
+You can also modify more parameter settings such as iterations per epoch, learning rate,..., etc. from main.py
 
 ## Citation
