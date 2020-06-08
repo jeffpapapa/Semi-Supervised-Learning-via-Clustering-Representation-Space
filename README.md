@@ -32,5 +32,12 @@ These are our main enviorments to run the above:
 * torchvision==0.2.2.post3
 * tqdm==4.40.0
 
+### Try your own data
+If you want to apply MCMC for your own data set, you need the following process:
+1. retrun embedding space z from your model(network), check our example `model.py`
+2. import our loss functions `from MCMC_loss import DBI, margin`
+3. check our code in `main.py`, find function `train_mcmc`, compute our loss followed by our example code
+4. train your model!
+
 
 ## Citation
