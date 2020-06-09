@@ -36,8 +36,10 @@ These are our main enviorments to run the above:
 If you want to apply MCMC for your own data set, you need the following process:
 1. retrun embedding space z from your model(network), check our example `model.py`
 2. import our loss functions `from MCMC_loss import DBI, margin`
-3. check our code in `main.py`, find function `train_mcmc`, compute our loss followed by our example code
-4. train your model!
+3. remember to load your unlabeled data(in my paper, I use unlabeled+labeled here) for every iteration
+4. check our code in `main.py`, find function `train_mcmc`, compute our loss followed by our example code
+5. feed labeled data and unlabeled data(in my paper, I use unlabeled+labeled here) into our loss functions followed by our code
+6. train your model!
 
 ### Notification
 You can also modify more parameter settings such as iterations per epoch, learning rate,..., etc. from main.py
