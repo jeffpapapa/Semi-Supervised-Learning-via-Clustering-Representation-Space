@@ -43,5 +43,3 @@ If you want to apply MCMC for your own data set, you need the following process:
 
 ### Notification
 You can also modify more parameter settings such as iterations per epoch, learning rate,..., etc. from the top of main.py
-
-## Citation
