@@ -2,6 +2,7 @@
 ### License
 author : Yen-Chieh, Huang
 Please cite `my paper(working now)` if you use this code or method.
+Yen-Chieh, Huang *Semi-Supervised Learning via Clustering Representation Space.* Unpublished doctoral dissertation. National Chiao Tung University, Taiwan. (2020)
 
 ## toy problems
 ### two-half moon
